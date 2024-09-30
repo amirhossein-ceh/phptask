@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "a8df1a8d-cc22-48c1-9c7d-29d22e948a42",
+		"name": "Subscription API",
+		"description": "API collection for managing subscriptions and sections.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16304663"
+	},
+	"item": [
+		{
+			"name": "Purchase Subscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|X93BcoluzGZV7t6Taecin8xDKQQBbwnKCiEsIiPhd589de30",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"plan\": \"premium\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/subscriptions/purchase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"subscriptions",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscription Invoice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|X93BcoluzGZV7t6Taecin8xDKQQBbwnKCiEsIiPhd589de30",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/subscriptions/5/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"subscriptions",
+						"5",
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|X93BcoluzGZV7t6Taecin8xDKQQBbwnKCiEsIiPhd589de30",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access Sections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|X93BcoluzGZV7t6Taecin8xDKQQBbwnKCiEsIiPhd589de30",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sections/access",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sections",
+						"access"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
